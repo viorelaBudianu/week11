@@ -7,18 +7,14 @@ namespace UserPosts.Services.Tests
     {
         UserService sut;
 
-        [SetUp]
-        public void Setup()
+        [Test]
+        public void Test()
         {
             IUserRepository userRepository = new UserDummyRepo();
             IPostRepository postRepository = new PostDummyRepo();
 
             sut = new UserService(userRepository, postRepository);
-        }
 
-        [Test]
-        public void Test()
-        {
             var expected = new UserActiveRespose()
             {
                 Email = "andrei@wtf.com",
