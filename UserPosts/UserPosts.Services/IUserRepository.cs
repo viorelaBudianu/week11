@@ -1,12 +1,8 @@
-﻿using System.Collections.Generic;
-using UserPosts.Domain;
+﻿using UserPosts.Domain;
 
 namespace UserPosts.Services
 {
-    public interface IUserRepository
+    public interface IUserRepository : IBaseRepository<User>
     {
-        User GetById(int id);
-
-        IList<User> GetAll();
     }
 }

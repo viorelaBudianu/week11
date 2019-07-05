@@ -3,12 +3,8 @@ using UserPosts.Domain;
 
 namespace UserPosts.Services
 {
-    public interface IPostRepository
+    public interface IPostRepository : IBaseRepository<Post>
     {
-        Post GetById(int id);
-
-        IList<Post> GetAll();
-
         IList<Post> GetPostsByUserId(int id);
     }
 }
