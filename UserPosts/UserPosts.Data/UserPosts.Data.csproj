@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,11 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserDataAccess.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Files\posts.json" />
     <None Include="Files\users.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserPosts.Domain\UserPosts.Domain.csproj">
+      <Project>{504D9FD7-939F-4D56-B35F-0A833D55D5B7}</Project>
+      <Name>UserPosts.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserPosts.Services\UserPosts.Services.csproj">
+      <Project>{555D150A-E8D1-48AD-A2BC-2E335F2231A4}</Project>
+      <Name>UserPosts.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

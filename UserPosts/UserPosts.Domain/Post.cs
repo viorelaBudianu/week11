@@ -1,10 +1,8 @@
 ﻿namespace UserPosts.Domain
 {
-    public class Post
+    public class Post : BaseEntity
     {
         public int UserId { get; set; }
-
-        public int Id { get; set; }
 
         public string Title { get; set; }
 
