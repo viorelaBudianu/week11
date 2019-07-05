@@ -8,5 +8,7 @@ namespace UserPosts.Services
         Post GetById(int id);
 
         IList<Post> GetAll();
+
+        IList<Post> GetPostsByUserId(int id);
     }
 }

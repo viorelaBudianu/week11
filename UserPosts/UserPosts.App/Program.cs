@@ -9,9 +9,11 @@ namespace UserPosts.App
         static void Main(string[] args)
         {
             IPostRepository postRepository = new PostDataAccess();
+            IUserRepository userRepository = new UserDataAccess();
 
-            var post = postRepository.GetAll();
+            var service = new UserService(userRepository, postRepository);
+
+            var response = service.GetUserActiveRespose(2);
         }
     }
-
 }

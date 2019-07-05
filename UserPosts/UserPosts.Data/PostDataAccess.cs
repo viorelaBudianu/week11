@@ -31,5 +31,11 @@ namespace UserPosts.Data
 
             return list.SingleOrDefault(x => x.Id == id);
         }
+
+        public IList<Post> GetPostsByUserId(int id)
+        {
+            var list = this.GetAll();
+            return list.Where(x => x.UserId == id).ToList();
+        }
     }
 }
