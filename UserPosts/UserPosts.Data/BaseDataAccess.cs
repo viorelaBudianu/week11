@@ -35,5 +35,6 @@ namespace UserPosts.Data
 
             return list.SingleOrDefault(x => x.Id == id);
         }
+
     }
 }

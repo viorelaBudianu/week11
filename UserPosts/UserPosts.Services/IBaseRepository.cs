@@ -8,7 +8,7 @@ namespace UserPosts.Services
 
         IList<T> GetAll();
 
-        //int Save(T item);
+        //void Save(T item);
 
         //void Delete(int id);
 
