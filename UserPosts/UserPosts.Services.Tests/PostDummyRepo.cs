@@ -5,6 +5,11 @@ namespace UserPosts.Services.Tests
 {
     public class PostDummyRepo : IPostRepository
     {
+        public void Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IList<Post> GetAll()
         {
             throw new System.NotImplementedException();
@@ -25,6 +30,16 @@ namespace UserPosts.Services.Tests
             list.Add(new Post());
 
             return list;
+        }
+
+        public void Save(Post item)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(int id, Post item)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
