@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommentsManager.cs" />
     <Compile Include="IBaseRepository.cs" />
     <Compile Include="ICommentRepository.cs" />
     <Compile Include="IPostRepository.cs" />

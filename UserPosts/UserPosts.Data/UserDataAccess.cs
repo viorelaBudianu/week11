@@ -9,5 +9,10 @@ namespace UserPosts.Data
         {
             return @"C:\Users\vbudianu\Desktop\VIO\curs11\tema11.1\UserPosts\UserPosts.Data\Files\users.json";
         }
+
+        protected override string SetFile()
+        {
+            return GetFile();
+        }
     }
 }

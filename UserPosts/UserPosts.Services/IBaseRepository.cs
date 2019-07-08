@@ -8,10 +8,10 @@ namespace UserPosts.Services
 
         IList<T> GetAll();
 
-        //void Save(T item);
+        void Save(T item);
 
-        //void Delete(int id);
+        void Delete(int id);
 
-        //void Update(int id, T item);
+        void Update(int id, T item);
     }
 }

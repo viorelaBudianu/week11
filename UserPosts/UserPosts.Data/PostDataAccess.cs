@@ -20,8 +20,10 @@ namespace UserPosts.Data
             return list.Where(x => x.UserId == id).ToList();
         }
 
-
-
+        protected override string SetFile()
+        {
+            return GetFile();
+        }
     }
 }
     

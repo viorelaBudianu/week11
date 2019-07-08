@@ -7,8 +7,10 @@ using UserPosts.Domain;
 
 namespace UserPosts.Services
 {
-    interface ICommentRepository:IBaseRepository<Comment>
+   public interface ICommentRepository:IBaseRepository<Comment>
     {
+        IList<Comment> GetCommentsByUserId(int id);
 
+       
     }
 }
